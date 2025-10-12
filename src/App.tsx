@@ -1,10 +1,30 @@
-import './App.css'
+import Greet from './components/Greet'
+import Person from './components/Person'
+import Status from './components/Status'
 
 function App() {
 
+  const persons = [
+    {
+      first: "John",
+      last: "Doe"
+    },
+    {
+      first: "Mike",
+      last: "Tysen"
+    },
+    {
+      first: "Jujutsu",
+      last: "Kaisen"
+    }
+  ]
+
   return (
     <>
-      <p>This is react+typescript</p>
+      {/* <p>This is react+typescript</p> */}
+      <Greet name={"Ram"} />
+      <Person names={persons} />
+      <Status status='error' />
     </>
   )
 }
