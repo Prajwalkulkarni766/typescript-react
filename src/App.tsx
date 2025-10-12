@@ -1,6 +1,7 @@
 import Greet from './components/Greet'
 import Person from './components/Person'
 import Status from './components/Status'
+import Button from './components/Button'
 
 function App() {
 
@@ -25,6 +26,9 @@ function App() {
       <Greet name={"Ram"} />
       <Person names={persons} />
       <Status status='error' />
+      <Button handelClick={() => {
+        console.log('Button is clicked')
+      }} />
     </>
   )
 }
