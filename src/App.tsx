@@ -2,6 +2,7 @@ import Greet from './components/Greet'
 import Person from './components/Person'
 import Status from './components/Status'
 import Button from './components/Button'
+import Auth from './components/Auth'
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
       <Button handelClick={() => {
         console.log('Button is clicked')
       }} />
+      <Auth />
     </>
   )
 }
