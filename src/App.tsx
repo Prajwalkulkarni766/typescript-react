@@ -3,6 +3,8 @@ import Person from './components/Person'
 import Status from './components/Status'
 import Button from './components/Button'
 import Auth from './components/Auth'
+import { ThemeContextProvider } from './context/ThemeContext'
+import Box from './context/Box'
 
 function App() {
 
@@ -31,6 +33,10 @@ function App() {
         console.log('Button is clicked')
       }} />
       <Auth />
+
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
     </>
   )
 }
